@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: app-angular
   namespace: angular-regular-staging
 spec:
   replicas: 1
