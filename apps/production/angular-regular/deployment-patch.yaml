@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: angular-regular-production
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+      - name: angular-production 
+        image: haroldo89/front-app:69
+        ports:
+        - containerPort: 80

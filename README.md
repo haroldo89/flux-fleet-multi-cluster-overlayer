@@ -30,20 +30,24 @@ export GITHUB_MULTI_CLUSTER_FLUX=[...]
 Install Flux onto yours clusters
 Run the bootstrap command:
 
-# Bootstrap BLR1 cluster
-kubectx blr1
+# Bootstrap staging cluster
+kubectx staging
 flux bootstrap github \
   --owner=$GITHUB_ORG \
+  --context=staging \
   --repository=$GITHUB_MULTI_CLUSTER_FLUX \
-  --path=./fleet/blr1 \
+  --path=./cluster/staging \
+  --components-extra=image-reflector-controller,image-automation-controller  \
   --personal
 
-# Bootstrap SGP1 cluster
-kubectx sgp1
+# Bootstrap production cluster
+kubectx production
 flux bootstrap github \
   --owner=$GITHUB_ORG \
+  --context=production \
   --repository=$GITHUB_MULTI_CLUSTER_FLUX \
-  --path=./fleet/sgp1 \
+  --path=./cluster/production \
+  --components-extra=image-reflector-controller,image-automation-controller  \
   --personal
 
 ```

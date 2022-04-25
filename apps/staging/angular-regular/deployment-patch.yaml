@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: angular-regular-staging
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: angular-staging 
+        image: haroldo89/front-app:69
+        ports:
+        - containerPort: 80
