@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: angular-regular-production
+  name: ns-angular-regular-production

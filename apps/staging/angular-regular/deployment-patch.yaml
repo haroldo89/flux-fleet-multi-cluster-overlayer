@@ -1,11 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-angular
-  namespace: angular-regular-staging
+  name: app-angular-staging
+  namespace: mywebapp
+  labels:
+    name: web
+    app: app-angular-staging
 spec:
-  replicas: 1
+  replicas: 3
+  selector:
+      matchLabels:
+        name: app-angular-staging
   template:
+    metadata:
+      labels:
+        name: app-angular-staging
     spec:
       containers:
       - name: angular-staging 
