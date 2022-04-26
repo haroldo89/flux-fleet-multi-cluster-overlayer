@@ -6,5 +6,5 @@ resources:
   - ../../base/angular-regular
 patchesStrategicMerge:
   - deployment-patch.yaml
-  - service-patch.yaml
-  - ingress-patch.yaml
+  # - service-patch.yaml
+  # - ingress-patch.yaml
