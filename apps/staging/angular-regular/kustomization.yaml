@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: ns-angular-regular-staging
 resources:
   - namespace.yaml
-  - ../apps/base/angular-regular
+  - ../../base/angular-regular
 patchesStrategicMerge:
   - deployment-patch.yaml
   - service-patch.yaml
