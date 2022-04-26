@@ -7,4 +7,4 @@ resources:
 patchesStrategicMerge:
   - deployment-patch.yaml
   - service-patch.yaml
-  # - ingress-patch.yaml
+  - ingress-patch.yaml
