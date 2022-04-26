@@ -31,7 +31,7 @@ Install Flux onto yours clusters
 Run the bootstrap command:
 
 # Bootstrap staging cluster
-kubectx staging
+kubectx staging \
 flux bootstrap github \
   --owner=$GITHUB_ORG \
   --context=staging \
