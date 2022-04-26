@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-app-python
+  labels:
+    name: app-python-staging
+    app: app-python-staging
+spec:
+  selector:
+    name: app-python-staging
+

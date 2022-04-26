@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp-app-python
+  labels:
+    name: rest-api
+    app: app-python
+spec:
+  replicas: 3
+  selector:
+      matchLabels:
+        name: app-python
+  template:
+    metadata:
+      labels:
+        name: app-python
+    spec:
+      containers:
+      - name: app-python 
+        image: haroldo89/python-app:1
+        ports:
+        - containerPort: 5000

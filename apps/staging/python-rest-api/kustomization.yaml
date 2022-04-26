@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: ns-python-regular-staging
+resources:
+  - namespace.yaml
+  - ../../base/python-rest-api
+patchesStrategicMerge:
+  - deployment-patch.yaml
+  - service-patch.yaml
+  - ingress-patch.yaml

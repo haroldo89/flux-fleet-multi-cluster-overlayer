@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp-app-python
+  labels:
+    name: rest-api
+    app: app-python-staging
+spec:
+  replicas: 1
+  selector:
+      matchLabels:
+        name: app-python-staging
+  template:
+    metadata:
+      labels:
+        name: app-python-staging
+    spec:
+      containers:
+      - name: app-python
+        image: haroldo89/python-app:2
