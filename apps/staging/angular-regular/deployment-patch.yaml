@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-angular-staging
+  name: dp-app-angular
   namespace: ns-angular-regular-staging
   labels:
     name: web
