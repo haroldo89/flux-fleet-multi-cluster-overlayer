@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-angular
+  name: service-app-angular
   # namespace: mywebapp
   labels:
     name: app-angular
