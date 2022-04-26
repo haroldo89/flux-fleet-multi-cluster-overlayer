@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: app-python
-        image: haroldo89/python-app:2
+        image: haroldo89/python-app:3
