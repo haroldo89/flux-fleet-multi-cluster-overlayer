@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-angular-ingress
-  namespace: mywebapp
+  # namespace: mywebapp
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
