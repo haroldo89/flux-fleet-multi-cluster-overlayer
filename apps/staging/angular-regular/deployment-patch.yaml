@@ -17,7 +17,7 @@ spec:
         name: app-angular-staging
     spec:
       containers:
-      - name: angular-staging 
+      - name: app-angular
         image: haroldo89/front-app:69
         ports:
         - containerPort: 80
