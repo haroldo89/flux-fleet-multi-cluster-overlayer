@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-angular-production
-  namespace: ns-angular-regular-production
+  # namespace: ns-angular-regular-production
 spec:
   rules:
   -  http:

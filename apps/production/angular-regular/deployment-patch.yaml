@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-angular-production
-  namespace: ns-angular-regular-production
+  name: dp-app-angular
+  # namespace: ns-angular-regular-production
   labels:
     name: web
     app: app-angular-production
