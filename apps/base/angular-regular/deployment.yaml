@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dp-app-angular
-  # namespace: mywebapp
   labels:
     name: web
     app: app-angular
